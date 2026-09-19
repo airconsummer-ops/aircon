@@ -5,19 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <!-- ===== SEO 基本 ===== -->
-    <title>立夏工程 · 香港冷氣清洗專家｜元朗·天水圍·屯門</title>
-    <meta name="description" content="立夏工程｜香港元朗、天水圍、屯門冷氣清洗專家，高壓水槍+高溫消毒，$600/部起，15天洗後保障。慢洗冷氣，細心用心。" />
+    <title>立夏工程 · 香港冷氣清洗及家居清潔專家｜元朗·天水圍·屯門</title>
+    <meta name="description" content="立夏工程｜香港元朗、天水圍、屯門冷氣清洗及家居清潔專家，高壓水槍+高溫消毒，$600/部起，15天洗後保障。另設鐘點清潔、家居清潔、入伙清潔。慢洗冷氣，細心用心。" />
     <link rel="canonical" href="https://www.example.com/" />
 
     <!-- ===== Open Graph ===== -->
-    <meta property="og:title" content="立夏工程 · 香港冷氣清洗專家" />
-    <meta property="og:description" content="慢洗冷氣專家｜元朗·天水圍·屯門｜$600/部起，15天保障" />
+    <meta property="og:title" content="立夏工程 · 香港冷氣清洗及家居清潔專家" />
+    <meta property="og:description" content="冷氣清洗 · 鐘點清潔 · 家居清潔 · 入伙清潔｜元朗·天水圍·屯門｜$600/部起，15天保障" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://www.example.com/" />
     <meta property="og:image" content="https://www.example.com/og-image.jpg" />
     <meta property="og:image:width" content="1200" />
     <meta property="og:image:height" content="630" />
-    <meta property="og:image:alt" content="立夏工程 · 香港冷氣清洗專家" />
+    <meta property="og:image:alt" content="立夏工程 · 香港冷氣清洗及家居清潔專家" />
     <meta property="og:site_name" content="立夏工程" />
     <meta property="og:locale" content="zh_HK" />
     <meta name="twitter:card" content="summary_large_image" />
@@ -29,10 +29,10 @@
             "@context": "https://schema.org",
             "@type": "LocalBusiness",
             "name": "立夏工程",
-            "description": "香港元朗、天水圍、屯門冷氣清洗專家，高壓水槍+高溫消毒，15天洗後保障。",
+            "description": "香港元朗、天水圍、屯門冷氣清洗及家居清潔專家，提供高壓水槍清洗、高溫消毒、鐘點清潔、家居清潔、入伙清潔，15天洗後保障。",
             "telephone": "+85267545772",
             "url": "https://www.example.com/",
-            "priceRange": "$580-$980",
+            "priceRange": "$580-$3500",
             "address": {
                 "@type": "PostalAddress",
                 "streetAddress": "朗益廣場",
@@ -53,6 +53,52 @@
                 { "@type": "AdministrativeArea", "name": "天水圍" },
                 { "@type": "AdministrativeArea", "name": "屯門" }
             ],
+            "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "立夏工程服務",
+                "itemListElement": [
+                    {
+                        "@type": "Offer",
+                        "itemOffered": { "@type": "Service", "name": "冷氣清洗" },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "priceCurrency": "HKD",
+                            "minPrice": "580",
+                            "maxPrice": "980"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": { "@type": "Service", "name": "鐘點清潔" },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "priceCurrency": "HKD",
+                            "minPrice": "120",
+                            "unitText": "每小時"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": { "@type": "Service", "name": "家居清潔" },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "priceCurrency": "HKD",
+                            "minPrice": "1200",
+                            "maxPrice": "2400"
+                        }
+                    },
+                    {
+                        "@type": "Offer",
+                        "itemOffered": { "@type": "Service", "name": "入伙清潔" },
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "priceCurrency": "HKD",
+                            "minPrice": "1800",
+                            "maxPrice": "3500"
+                        }
+                    }
+                ]
+            },
             "sameAs": [
                 "https://www.instagram.com/你的帳號",
                 "https://www.xiaohongshu.com/user/profile/你的ID",
@@ -800,6 +846,232 @@
             color: var(--text-mid);
             font-size: 0.9rem;
             line-height: 1.7;
+        }
+
+        /* ============================================================
+               7b. CLEANING SERVICES
+               ============================================================ */
+        .cleaning-services {
+            padding: 70px 0 60px;
+            background: var(--white);
+        }
+        .cleaning-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+            gap: 24px;
+            max-width: 1020px;
+            margin: 0 auto;
+        }
+        .cleaning-card {
+            background: var(--primary-bg);
+            border-radius: var(--radius-md);
+            padding: 32px 24px 28px;
+            text-align: center;
+            border: 1px solid var(--gray-200);
+            transition: var(--transition);
+            box-shadow: var(--shadow-sm);
+            position: relative;
+            display: flex;
+            flex-direction: column;
+        }
+        .cleaning-card:hover {
+            transform: translateY(-6px) scale(1.01);
+            box-shadow: var(--shadow-md);
+            border-color: var(--accent-color);
+        }
+        .cleaning-card .cleaning-icon {
+            font-size: 2.4rem;
+            color: var(--accent-color);
+            background: var(--white);
+            width: 72px;
+            height: 72px;
+            line-height: 72px;
+            border-radius: 50%;
+            margin: 0 auto 14px;
+            transition: var(--transition);
+            box-shadow: 0 4px 16px rgba(0, 201, 167, 0.15);
+        }
+        .cleaning-card:hover .cleaning-icon {
+            background: var(--accent-gradient);
+            color: var(--white);
+            transform: scale(1.08) rotate(4deg);
+        }
+        .cleaning-card h3 {
+            font-size: 1.2rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            margin-bottom: 8px;
+        }
+        .cleaning-card .cleaning-price {
+            margin: 4px 0 2px;
+            display: flex;
+            align-items: baseline;
+            justify-content: center;
+            gap: 4px;
+        }
+        .cleaning-card .cleaning-price .cp-num {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent-color);
+            letter-spacing: -0.5px;
+            transition: var(--transition);
+        }
+        .cleaning-card:hover .cleaning-price .cp-num {
+            transform: scale(1.06);
+        }
+        .cleaning-card .cleaning-price .cp-unit {
+            font-size: 0.85rem;
+            color: var(--text-light);
+            font-weight: 400;
+        }
+        .cleaning-card .cleaning-price-note {
+            font-size: 0.78rem;
+            color: var(--text-mid);
+            background: var(--accent-light);
+            display: inline-block;
+            padding: 3px 12px;
+            border-radius: 40px;
+            margin: 0 auto 12px;
+            font-weight: 500;
+        }
+        .cleaning-card p {
+            color: var(--text-mid);
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 12px;
+        }
+        .cleaning-list {
+            list-style: none;
+            text-align: left;
+            padding: 0 4px;
+            margin-bottom: 8px;
+        }
+        .cleaning-list li {
+            font-size: 0.85rem;
+            color: var(--text-mid);
+            padding: 3px 0;
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+        .cleaning-list li i {
+            color: var(--accent-color);
+            width: 18px;
+            text-align: center;
+        }
+        .cleaning-card .cleaning-cta {
+            margin-top: auto;
+            padding-top: 16px;
+        }
+        .cleaning-card .cleaning-cta .btn {
+            width: 100%;
+            justify-content: center;
+            padding: 12px 20px;
+            font-size: 0.88rem;
+        }
+        .cleaning-card.popular {
+            border: 2px solid var(--accent-color);
+            box-shadow: 0 0 30px rgba(0, 201, 167, 0.12);
+        }
+        .cleaning-card .cleaning-badge {
+            position: absolute;
+            top: -14px;
+            right: 18px;
+            background: var(--accent-gradient);
+            color: var(--white);
+            font-size: 0.65rem;
+            font-weight: 700;
+            padding: 4px 14px;
+            border-radius: 40px;
+            letter-spacing: 0.8px;
+            text-transform: uppercase;
+        }
+
+        /* 清潔服務價目表 */
+        .cleaning-price-table {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: var(--primary-bg);
+            border-radius: var(--radius-md);
+            padding: 28px 24px 22px;
+            border: 1px solid var(--gray-200);
+            box-shadow: var(--shadow-sm);
+        }
+        .cleaning-price-table h3 {
+            font-size: 1.15rem;
+            font-weight: 700;
+            color: var(--primary-dark);
+            text-align: center;
+            margin-bottom: 18px;
+        }
+        .cleaning-price-table h3 i {
+            color: var(--accent-color);
+            margin-right: 8px;
+        }
+        .price-table-wrap {
+            overflow-x: auto;
+            border-radius: var(--radius-sm);
+            -webkit-overflow-scrolling: touch;
+        }
+        .price-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: var(--white);
+            border-radius: var(--radius-sm);
+            overflow: hidden;
+            min-width: 640px;
+        }
+        .price-table thead {
+            background: var(--primary-dark);
+            color: var(--white);
+        }
+        .price-table th {
+            padding: 12px 16px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            text-align: left;
+            letter-spacing: 0.3px;
+            white-space: nowrap;
+        }
+        .price-table td {
+            padding: 12px 16px;
+            font-size: 0.88rem;
+            color: var(--text-mid);
+            border-bottom: 1px solid var(--gray-200);
+            transition: var(--transition);
+        }
+        .price-table tbody tr:last-child td {
+            border-bottom: none;
+        }
+        .price-table tbody tr:hover td {
+            background: var(--primary-bg);
+            color: var(--text-dark);
+        }
+        .price-table td.pt-price {
+            font-weight: 700;
+            color: var(--accent-color);
+            white-space: nowrap;
+        }
+        .price-table tr.pt-highlight {
+            background: var(--accent-light);
+        }
+        .price-table tr.pt-highlight td {
+            color: var(--primary-dark);
+            font-weight: 500;
+        }
+        .price-table tr.pt-highlight td.pt-price {
+            color: #008573;
+        }
+        .price-table-note {
+            margin-top: 14px;
+            text-align: center;
+            font-size: 0.82rem;
+            color: var(--text-light);
+            line-height: 1.7;
+        }
+        .price-table-note i {
+            color: var(--accent-color);
+            margin-right: 6px;
         }
 
         /* ---- YOUNG LIVING 專區 ---- */
@@ -2472,6 +2744,14 @@
             .wa-form .form-group {
                 flex: 1 1 100%;
             }
+            .cleaning-price-table {
+                padding: 22px 14px 18px;
+            }
+            .price-table th,
+            .price-table td {
+                padding: 10px 12px;
+                font-size: 0.8rem;
+            }
         }
 
         @media (max-width: 480px) {
@@ -2679,6 +2959,17 @@
                 padding: 14px 28px;
                 font-size: 0.95rem;
             }
+            .cleaning-card .cleaning-price .cp-num {
+                font-size: 1.6rem;
+            }
+            .cleaning-price-table h3 {
+                font-size: 1rem;
+            }
+            .price-table th,
+            .price-table td {
+                padding: 8px 10px;
+                font-size: 0.75rem;
+            }
         }
     </style>
 </head>
@@ -2707,7 +2998,7 @@
                 <div class="brand-text">
                     <span class="brand-name">立夏工程</span>
                     <span class="brand-sub">
-                        <span class="highlight-tag"><i class="fas fa-star"></i> <span data-key="brand_tag">慢洗冷氣專家</span></span>
+                        <span class="highlight-tag"><i class="fas fa-star"></i> <span data-key="brand_tag">冷氣清洗 · 家居清潔專家</span></span>
                     </span>
                 </div>
             </div>
@@ -2731,6 +3022,7 @@
             <nav>
                 <ul class="nav-links" id="navLinks">
                     <li><a href="#features" data-nav data-key="nav_services">服務</a></li>
+                    <li><a href="#cleaning" data-nav data-key="nav_cleaning">清潔服務</a></li>
                     <li><a href="#steps" data-nav data-key="nav_steps">洗機步驟</a></li>
                     <li><a href="#pricing" data-nav data-key="nav_pricing">價格</a></li>
                     <li><a href="#videos" data-nav data-key="nav_videos">影片</a></li>
@@ -2756,7 +3048,7 @@
             <div class="hero-content">
                 <div class="tag"><i class="fas fa-shield-alt" style="margin-right:6px;"></i> <span data-key="hero_tag">專業師傅 · 十年經驗</span></div>
                 <h1>
-                    <span data-key="hero_title1">立夏 冷氣清洗</span><br />
+                    <span data-key="hero_title1">立夏 冷氣清洗 · 家居清潔</span><br />
                     <span class="highlight" data-key="hero_title2">慢慢洗 · 細心洗</span>
                 </h1>
                 <div class="slogan">
@@ -2771,9 +3063,9 @@
                 </div>
 
                 <p class="desc" data-key="hero_desc">
-                    <i class="fas fa-check-circle"></i> 高壓深層清洗
-                    <i class="fas fa-check-circle" style="margin-left:16px;"></i> 防霉殺菌處理<br />
-                    用心對待每一部冷氣 還您清新涼爽有覺好訓
+                    <i class="fas fa-check-circle"></i> 冷氣高壓深層清洗
+                    <i class="fas fa-check-circle" style="margin-left:16px;"></i> 鐘點 · 家居 · 入伙清潔<br />
+                    用心對待每一個細節 還您清新涼爽舒適的家
                 </p>
                 <div class="hero-buttons">
                     <a href="#pricing" class="btn btn-primary">
@@ -2822,6 +3114,175 @@
                     <h3 data-key="f4_title">15天洗後保障</h3>
                     <p data-key="f4_desc">信心之選，15天同一問題滴水保障，服務有質素。</p>
                 </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ============================================================
+         清潔服務 CLEANING SERVICES
+    ============================================================ -->
+    <section class="cleaning-services" id="cleaning">
+        <div class="container">
+            <div class="section-title reveal">
+                <span class="sub"><i class="fas fa-broom"></i> <span data-key="cleaning_sub">家居清潔服務</span></span>
+                <h2><i class="fas fa-home"></i> <span data-key="cleaning_title">鐘點 · 家居 · 入伙清潔</span></h2>
+                <p data-key="cleaning_desc">專業清潔團隊，為您打造乾淨舒適的家</p>
+            </div>
+            <div class="cleaning-grid">
+                <!-- 鐘點清潔 -->
+                <div class="cleaning-card reveal" style="transition-delay:0.05s;">
+                    <div class="cleaning-icon"><i class="fas fa-clock"></i></div>
+                    <h3 data-key="c1_title">鐘點清潔</h3>
+                    <div class="cleaning-price">
+                        <span class="cp-num">$120</span>
+                        <span class="cp-unit">/ 小時起</span>
+                    </div>
+                    <div class="cleaning-price-note" data-key="c1_price_note">最少 2 小時 · 2 小時 $240 起</div>
+                    <p data-key="c1_desc">彈性時間，按小時收費，適合日常打掃、深層清潔、煮飯、洗衣等家務支援。</p>
+                    <ul class="cleaning-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c1_f1">每小時 $120 起</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c1_f2">最少 2 小時</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c1_f3">自備清潔用品或代購</span></li>
+                    </ul>
+                    <div class="cleaning-cta">
+                        <a href="#booking" class="btn btn-accent" onclick="selectService('鐘點清潔')">
+                            <i class="fas fa-calendar-check"></i> <span data-key="hero_btn2">立即預約</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 家居清潔 -->
+                <div class="cleaning-card popular reveal" style="transition-delay:0.10s;">
+                    <span class="cleaning-badge" data-key="cleaning_popular">最受歡迎</span>
+                    <div class="cleaning-icon"><i class="fas fa-home"></i></div>
+                    <h3 data-key="c2_title">家居清潔</h3>
+                    <div class="cleaning-price">
+                        <span class="cp-num">$1,200</span>
+                        <span class="cp-unit">/ 次起</span>
+                    </div>
+                    <div class="cleaning-price-note" data-key="c2_price_note">300 呎以下 · 全屋深層清潔</div>
+                    <p data-key="c2_desc">全屋深層清潔，包括廚房、浴室、地板、窗戶、家具除塵等，讓家居煥然一新。</p>
+                    <ul class="cleaning-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c2_f1">按單位面積報價</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c2_f2">廚房去油 · 浴室除霉</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c2_f3">可加配冷氣清洗</span></li>
+                    </ul>
+                    <div class="cleaning-cta">
+                        <a href="#booking" class="btn btn-accent" onclick="selectService('家居清潔')">
+                            <i class="fas fa-calendar-check"></i> <span data-key="hero_btn2">立即預約</span>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- 入伙清潔 -->
+                <div class="cleaning-card reveal" style="transition-delay:0.15s;">
+                    <div class="cleaning-icon"><i class="fas fa-box-open"></i></div>
+                    <h3 data-key="c3_title">入伙清潔</h3>
+                    <div class="cleaning-price">
+                        <span class="cp-num">$1,800</span>
+                        <span class="cp-unit">/ 次起</span>
+                    </div>
+                    <div class="cleaning-price-note" data-key="c3_price_note">300 呎以下 · 裝修後清潔</div>
+                    <p data-key="c3_desc">新居入伙前徹底清潔，去除裝修粉塵、油漆漬、膠漬，讓您安心入住。</p>
+                    <ul class="cleaning-list">
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c3_f1">裝修後清潔</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c3_f2">全屋除塵 · 去漬</span></li>
+                        <li><i class="fas fa-check-circle"></i> <span data-key="c3_f3">可預約即日或指定日期</span></li>
+                    </ul>
+                    <div class="cleaning-cta">
+                        <a href="#booking" class="btn btn-accent" onclick="selectService('入伙清潔')">
+                            <i class="fas fa-calendar-check"></i> <span data-key="hero_btn2">立即預約</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 清潔服務價目表 -->
+            <div class="cleaning-price-table reveal" style="margin-top:36px;">
+                <h3><i class="fas fa-table"></i> <span data-key="cleaning_table_title">清潔服務價目表</span></h3>
+                <div class="price-table-wrap">
+                    <table class="price-table">
+                        <thead>
+                            <tr>
+                                <th data-key="pt_service">服務項目</th>
+                                <th data-key="pt_size">單位面積</th>
+                                <th data-key="pt_price">收費</th>
+                                <th data-key="pt_note">備註</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td data-key="pt_r1_service">鐘點清潔</td>
+                                <td data-key="pt_r1_size">不限</td>
+                                <td class="pt-price">$120 / 小時起</td>
+                                <td data-key="pt_r1_note">最少 2 小時，2 小時 $240 起</td>
+                            </tr>
+                            <tr>
+                                <td data-key="pt_r2_service">家居清潔</td>
+                                <td data-key="pt_r2_size">300 呎以下</td>
+                                <td class="pt-price">$1,200 起</td>
+                                <td data-key="pt_r2_note">全屋深層清潔</td>
+                            </tr>
+                            <tr>
+                                <td data-key="pt_r3_service">家居清潔</td>
+                                <td data-key="pt_r3_size">300–500 呎</td>
+                                <td class="pt-price">$1,500 起</td>
+                                <td data-key="pt_r3_note">全屋深層清潔</td>
+                            </tr>
+                            <tr>
+                                <td data-key="pt_r4_service">家居清潔</td>
+                                <td data-key="pt_r4_size">500–800 呎</td>
+                                <td class="pt-price">$1,900 起</td>
+                                <td data-key="pt_r4_note">全屋深層清潔</td>
+                            </tr>
+                            <tr>
+                                <td data-key="pt_r5_service">家居清潔</td>
+                                <td data-key="pt_r5_size">800 呎以上</td>
+                                <td class="pt-price">$2,400 起</td>
+                                <td data-key="pt_r5_note">按實際情況報價</td>
+                            </tr>
+                            <tr>
+                                <td data-key="pt_r6_service">入伙清潔</td>
+                                <td data-key="pt_r6_size">300 呎以下</td>
+                                <td class="pt-price">$1,800 起</td>
+                                <td data-key="pt_r6_note">裝修後清潔</td>
+                            </tr>
+                            <tr>
+                                <td data-key="pt_r7_service">入伙清潔</td>
+                                <td data-key="pt_r7_size">300–500 呎</td>
+                                <td class="pt-price">$2,200 起</td>
+                                <td data-key="pt_r7_note">裝修後清潔</td>
+                            </tr>
+                            <tr>
+                                <td data-key="pt_r8_service">入伙清潔</td>
+                                <td data-key="pt_r8_size">500–800 呎</td>
+                                <td class="pt-price">$2,800 起</td>
+                                <td data-key="pt_r8_note">裝修後清潔</td>
+                            </tr>
+                            <tr>
+                                <td data-key="pt_r9_service">入伙清潔</td>
+                                <td data-key="pt_r9_size">800 呎以上</td>
+                                <td class="pt-price">$3,500 起</td>
+                                <td data-key="pt_r9_note">按實際情況報價</td>
+                            </tr>
+                            <tr class="pt-highlight">
+                                <td data-key="pt_r10_service">冷氣 + 清潔組合</td>
+                                <td data-key="pt_r10_size">不限</td>
+                                <td class="pt-price">9 折優惠</td>
+                                <td data-key="pt_r10_note">同時預約冷氣清洗及清潔服務</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="price-table-note">
+                    <i class="fas fa-info-circle"></i>
+                    <span data-key="cleaning_table_note">以上價錢僅供參考，實際收費按現場環境、清潔難度及所需時間調整，歡迎 WhatsApp 查詢報價。</span>
+                </div>
+            </div>
+
+            <div style="text-align:center; margin-top:22px; color:var(--text-light); font-size:0.85rem;">
+                <i class="fas fa-info-circle" style="color:var(--accent-color);"></i>
+                <span data-key="cleaning_note">清潔服務價錢按實際情況報價，歡迎 WhatsApp 查詢。</span>
             </div>
         </div>
     </section>
@@ -3019,8 +3480,8 @@
                 <div class="form-header">
                     <i class="fas fa-snowflake"></i>
                     <h3>
-                        <span data-key="booking_header">立夏工程 · 冷氣清洗預約</span>
-                        <small data-key="booking_header_small">留低 姓名 · 電話 · 地址 · 清洗日期 · 專人回覆</small>
+                        <span data-key="booking_header">立夏工程 · 冷氣清洗及家居清潔預約</span>
+                        <small data-key="booking_header_small">留低 姓名 · 電話 · 地址 · 服務類型 · 專人回覆</small>
                     </h3>
                 </div>
                 <div class="form-body">
@@ -3029,6 +3490,30 @@
                             <div class="form-group full">
                                 <label for="waName"><i class="fas fa-user"></i> 姓名 <span style="color:#e8707a;">*</span></label>
                                 <input type="text" id="waName" name="name" placeholder="請輸入您的姓名" required />
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group full">
+                                <label><i class="fas fa-concierge-bell"></i> 服務類型 <span style="color:#e8707a;">*</span></label>
+                                <div class="radio-group">
+                                    <label>
+                                        <input type="radio" name="serviceType" value="冷氣清洗" checked />
+                                        <span>冷氣清洗</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="serviceType" value="鐘點清潔" />
+                                        <span>鐘點清潔</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="serviceType" value="家居清潔" />
+                                        <span>家居清潔</span>
+                                    </label>
+                                    <label>
+                                        <input type="radio" name="serviceType" value="入伙清潔" />
+                                        <span>入伙清潔</span>
+                                    </label>
+                                </div>
                             </div>
                         </div>
 
@@ -3055,38 +3540,70 @@
                             </div>
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group full">
-                                <label><i class="fas fa-snowflake"></i> 冷氣類型 <span style="color:#e8707a;">*</span></label>
-                                <div class="radio-group">
-                                    <label>
-                                        <input type="radio" name="acType" value="分體式" checked />
-                                        <span>分體式</span>
-                                    </label>
-                                    <label>
-                                        <input type="radio" name="acType" value="窗口式" />
-                                        <span>窗口式</span>
-                                    </label>
+                        <!-- 冷氣清洗專用欄位 -->
+                        <div id="acFields">
+                            <div class="form-row">
+                                <div class="form-group full">
+                                    <label><i class="fas fa-snowflake"></i> 冷氣類型 <span style="color:#e8707a;">*</span></label>
+                                    <div class="radio-group">
+                                        <label>
+                                            <input type="radio" name="acType" value="分體式" checked />
+                                            <span>分體式</span>
+                                        </label>
+                                        <label>
+                                            <input type="radio" name="acType" value="窗口式" />
+                                            <span>窗口式</span>
+                                        </label>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group full">
+                                    <label for="waQuantity"><i class="fas fa-list-ol"></i> 數量 <span style="color:#e8707a;">*</span></label>
+                                    <select id="waQuantity" name="quantity" required>
+                                        <option value="" disabled selected>請選擇數量</option>
+                                        <option value="1">1 部</option>
+                                        <option value="2">2 部</option>
+                                        <option value="3">3 部</option>
+                                        <option value="4">4 部</option>
+                                        <option value="5">5 部</option>
+                                        <option value="6">6 部</option>
+                                        <option value="7">7 部</option>
+                                        <option value="8">8 部</option>
+                                        <option value="9">9 部</option>
+                                        <option value="10+">10 部或以上</option>
+                                    </select>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="form-row">
-                            <div class="form-group full">
-                                <label for="waQuantity"><i class="fas fa-list-ol"></i> 數量 <span style="color:#e8707a;">*</span></label>
-                                <select id="waQuantity" name="quantity" required>
-                                    <option value="" disabled selected>請選擇數量</option>
-                                    <option value="1">1 部</option>
-                                    <option value="2">2 部</option>
-                                    <option value="3">3 部</option>
-                                    <option value="4">4 部</option>
-                                    <option value="5">5 部</option>
-                                    <option value="6">6 部</option>
-                                    <option value="7">7 部</option>
-                                    <option value="8">8 部</option>
-                                    <option value="9">9 部</option>
-                                    <option value="10+">10 部或以上</option>
-                                </select>
+                        <!-- 清潔服務專用欄位 -->
+                        <div id="cleaningFields" style="display:none;">
+                            <div class="form-row">
+                                <div class="form-group full">
+                                    <label for="waCleaningSize"><i class="fas fa-ruler-combined"></i> 單位實用面積（可選）</label>
+                                    <select id="waCleaningSize" name="cleaningSize">
+                                        <option value="">請選擇（可略）</option>
+                                        <option value="300以下">300 呎以下</option>
+                                        <option value="300-500">300–500 呎</option>
+                                        <option value="500-800">500–800 呎</option>
+                                        <option value="800-1200">800–1,200 呎</option>
+                                        <option value="1200以上">1,200 呎以上</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group full">
+                                    <label for="waCleaningHours"><i class="fas fa-clock"></i> 預計鐘點時數（鐘點清潔適用）</label>
+                                    <select id="waCleaningHours" name="cleaningHours">
+                                        <option value="">請選擇（可略）</option>
+                                        <option value="2">2 小時</option>
+                                        <option value="3">3 小時</option>
+                                        <option value="4">4 小時</option>
+                                        <option value="5">5 小時</option>
+                                        <option value="6">6 小時或以上</option>
+                                    </select>
+                                </div>
                             </div>
                         </div>
 
@@ -3297,7 +3814,7 @@
             <div class="section-title reveal">
                 <span class="sub"><i class="fas fa-question-circle"></i> <span data-key="faq_sub">常見問題</span></span>
                 <h2><i class="fas fa-comments"></i> <span data-key="faq_title">您可能想知</span></h2>
-                <p data-key="faq_desc">解答您對冷氣清洗嘅疑慮</p>
+                <p data-key="faq_desc">解答您對冷氣清洗及家居清潔嘅疑慮</p>
             </div>
             <div class="faq-list">
                 <div class="faq-item reveal">
@@ -3330,10 +3847,17 @@
                 </div>
                 <div class="faq-item reveal">
                     <button class="faq-question" type="button">
-                        <span data-key="faq_q5">點樣預約最快？</span>
+                        <span data-key="faq_q5">鐘點清潔、家居清潔、入伙清潔有咩分別？</span>
                         <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
                     </button>
-                    <div class="faq-answer" data-key="faq_a5">最快方法係點擊上面「立即預約」按鈕填寫表格，或者直接 WhatsApp 6754 5772 聯絡我哋，一般 30 分鐘內會回覆。</div>
+                    <div class="faq-answer" data-key="faq_a5">鐘點清潔按小時收費，適合日常家務支援；家居清潔為全屋深層清潔，按面積報價；入伙清潔針對新居入伙前嘅裝修後清潔，去除粉塵、油漆漬及膠漬。詳情歡迎 WhatsApp 查詢。</div>
+                </div>
+                <div class="faq-item reveal">
+                    <button class="faq-question" type="button">
+                        <span data-key="faq_q6">點樣預約最快？</span>
+                        <span class="faq-icon"><i class="fas fa-chevron-down"></i></span>
+                    </button>
+                    <div class="faq-answer" data-key="faq_a6">最快方法係點擊上面「立即預約」按鈕填寫表格，或者直接 WhatsApp 6754 5772 聯絡我哋，一般 30 分鐘內會回覆。</div>
                 </div>
             </div>
         </div>
@@ -3398,7 +3922,7 @@
     <footer class="footer">
         <div class="container">
             <p>
-                © 2016 <strong>立夏工程</strong> · <span data-key="footer_tag">香港冷氣慢洗專家</span> ·
+                © 2016 <strong>立夏工程</strong> · <span data-key="footer_tag">香港冷氣清洗及家居清潔專家</span> ·
                 <a href="#home"><i class="fas fa-snowflake"></i> <span data-key="footer_slogan">慢慢洗 · 細心洗</span></a>
                 <span style="margin:0 8px;">|</span>
                 <span class="heart"><i class="fas fa-heart"></i></span> <span data-key="footer_heart">用心服務每一位顧客</span>
@@ -3411,7 +3935,7 @@
                 <a href="https://www.facebook.com/你的專頁" target="_blank" rel="noopener noreferrer" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             </div>
             <p style="margin-top:4px; font-size:0.7rem; opacity:0.4;">
-                <i class="fas fa-shield-alt"></i> <span data-key="footer_sub">元天屯 · 十年信譽</span>
+                <i class="fas fa-shield-alt"></i> <span data-key="footer_sub">元天屯 · 十年信譽 · 冷氣清洗 · 家居清潔</span>
             </p>
         </div>
     </footer>
@@ -3524,6 +4048,28 @@
             // ---- 8. WhatsApp 預約表單 ----
             const waForm = document.getElementById('waBookingForm');
             if (waForm) {
+                // 服務類型切換
+                const serviceRadios = document.querySelectorAll('input[name="serviceType"]');
+                const acFields = document.getElementById('acFields');
+                const cleaningFields = document.getElementById('cleaningFields');
+
+                function toggleServiceFields() {
+                    const selected = document.querySelector('input[name="serviceType"]:checked')?.value;
+                    if (selected === '冷氣清洗') {
+                        acFields.style.display = 'block';
+                        cleaningFields.style.display = 'none';
+                    } else {
+                        acFields.style.display = 'none';
+                        cleaningFields.style.display = 'block';
+                    }
+                }
+
+                serviceRadios.forEach(function(radio) {
+                    radio.addEventListener('change', toggleServiceFields);
+                });
+                toggleServiceFields();
+
+                // 提交表單
                 waForm.addEventListener('submit', function(e) {
                     e.preventDefault();
 
@@ -3531,12 +4077,11 @@
                     const date = document.getElementById('waDate').value;
                     const time = document.getElementById('waTime').value;
                     const address = document.getElementById('waAddress').value;
-                    const acType = document.querySelector('input[name="acType"]:checked')?.value || '未選擇';
-                    const quantity = document.getElementById('waQuantity').value;
+                    const serviceType = document.querySelector('input[name="serviceType"]:checked')?.value || '未選擇';
 
                     // 簡單驗證
-                    if (!name || !date || !time || !address || !quantity) {
-                        alert('請填寫所有必填欄位（姓名、日期、時間、地區、數量）');
+                    if (!name || !date || !time || !address) {
+                        alert('請填寫所有必填欄位（姓名、日期、時間、地區）');
                         return;
                     }
 
@@ -3552,18 +4097,30 @@
                         // 使用原始值
                     }
 
-                    // 組合 WhatsApp 訊息
-                    const message = 
-`你好，我想預約冷氣清洗服務：
+                    let message = `你好，我想預約服務：\n\n`;
+                    message += `👤 姓名：${name}\n`;
+                    message += `🛠️ 服務類型：${serviceType}\n`;
+                    message += `📅 日期：${formattedDate}\n`;
+                    message += `⏰ 時間：${time}\n`;
+                    message += `📍 地區：${address}\n`;
 
-👤 姓名：${name}
-📅 日期：${formattedDate}
-⏰ 時間：${time}
-📍 地區：${address}
-❄️ 冷氣類型：${acType}
-🔢 數量：${quantity} 部
+                    if (serviceType === '冷氣清洗') {
+                        const acType = document.querySelector('input[name="acType"]:checked')?.value || '未選擇';
+                        const quantity = document.getElementById('waQuantity').value;
+                        if (!quantity) {
+                            alert('請選擇冷氣數量');
+                            return;
+                        }
+                        message += `❄️ 冷氣類型：${acType}\n`;
+                        message += `🔢 數量：${quantity} 部\n`;
+                    } else {
+                        const size = document.getElementById('waCleaningSize').value;
+                        const hours = document.getElementById('waCleaningHours').value;
+                        if (size) message += `📐 單位面積：${size} 呎\n`;
+                        if (hours) message += `⏱️ 預計時數：${hours} 小時\n`;
+                    }
 
-請確認預約，謝謝！`;
+                    message += `\n請確認預約，謝謝！`;
 
                     const waUrl = 'https://wa.me/85267545772?text=' + encodeURIComponent(message);
                     window.open(waUrl, '_blank', 'noopener,noreferrer');
@@ -3748,9 +4305,10 @@
             // ---- 13. 多語言 ----
             const langData = {
                 'zh-hk': {
-                    'brand_tag': '慢洗冷氣專家',
+                    'brand_tag': '冷氣清洗 · 家居清潔專家',
                     'service_area': '元朗 · 天水圍 · 屯門',
                     'nav_services': '服務',
+                    'nav_cleaning': '清潔服務',
                     'nav_steps': '洗機步驟',
                     'nav_pricing': '價格',
                     'nav_videos': '影片',
@@ -3759,11 +4317,11 @@
                     'nav_faq': '常見問題',
                     'nav_contact': '聯絡',
                     'hero_tag': '專業師傅 · 十年經驗',
-                    'hero_title1': '立夏 冷氣清洗',
+                    'hero_title1': '立夏 冷氣清洗 · 家居清潔',
                     'hero_title2': '慢慢洗 · 細心洗',
                     'hero_slogan': '慢工出細貨 只要您唔趕時間',
                     'hero_trust': '洗後滴水保障',
-                    'hero_desc': '高壓深層清洗 · 防霉殺菌處理\n用心對待每一部冷氣 還您清新涼爽有覺好訓',
+                    'hero_desc': '冷氣高壓深層清洗 · 鐘點 · 家居 · 入伙清潔\n用心對待每一個細節 還您清新涼爽舒適的家',
                     'hero_btn1': '查詢價格',
                     'hero_btn2': '立即預約',
                     'stat1': '冷氣清洗',
@@ -3781,6 +4339,65 @@
                     'f3_desc': '不趕工、不馬虎，每一部冷氣都細心拆洗，確保每個部件潔淨如新。',
                     'f4_title': '15天洗後保障',
                     'f4_desc': '信心之選，15天同一問題滴水保障，服務有質素。',
+                    'cleaning_sub': '家居清潔服務',
+                    'cleaning_title': '鐘點 · 家居 · 入伙清潔',
+                    'cleaning_desc': '專業清潔團隊，為您打造乾淨舒適的家',
+                    'cleaning_popular': '最受歡迎',
+                    'c1_title': '鐘點清潔',
+                    'c1_desc': '彈性時間，按小時收費，適合日常打掃、深層清潔、煮飯、洗衣等家務支援。',
+                    'c1_price_note': '最少 2 小時 · 2 小時 $240 起',
+                    'c1_f1': '每小時 $120 起',
+                    'c1_f2': '最少 2 小時',
+                    'c1_f3': '自備清潔用品或代購',
+                    'c2_title': '家居清潔',
+                    'c2_desc': '全屋深層清潔，包括廚房、浴室、地板、窗戶、家具除塵等，讓家居煥然一新。',
+                    'c2_price_note': '300 呎以下 · 全屋深層清潔',
+                    'c2_f1': '按單位面積報價',
+                    'c2_f2': '廚房去油 · 浴室除霉',
+                    'c2_f3': '可加配冷氣清洗',
+                    'c3_title': '入伙清潔',
+                    'c3_desc': '新居入伙前徹底清潔，去除裝修粉塵、油漆漬、膠漬，讓您安心入住。',
+                    'c3_price_note': '300 呎以下 · 裝修後清潔',
+                    'c3_f1': '裝修後清潔',
+                    'c3_f2': '全屋除塵 · 去漬',
+                    'c3_f3': '可預約即日或指定日期',
+                    'cleaning_note': '清潔服務價錢按實際情況報價，歡迎 WhatsApp 查詢。',
+                    'cleaning_table_title': '清潔服務價目表',
+                    'pt_service': '服務項目',
+                    'pt_size': '單位面積',
+                    'pt_price': '收費',
+                    'pt_note': '備註',
+                    'pt_r1_service': '鐘點清潔',
+                    'pt_r1_size': '不限',
+                    'pt_r1_note': '最少 2 小時，2 小時 $240 起',
+                    'pt_r2_service': '家居清潔',
+                    'pt_r2_size': '300 呎以下',
+                    'pt_r2_note': '全屋深層清潔',
+                    'pt_r3_service': '家居清潔',
+                    'pt_r3_size': '300–500 呎',
+                    'pt_r3_note': '全屋深層清潔',
+                    'pt_r4_service': '家居清潔',
+                    'pt_r4_size': '500–800 呎',
+                    'pt_r4_note': '全屋深層清潔',
+                    'pt_r5_service': '家居清潔',
+                    'pt_r5_size': '800 呎以上',
+                    'pt_r5_note': '按實際情況報價',
+                    'pt_r6_service': '入伙清潔',
+                    'pt_r6_size': '300 呎以下',
+                    'pt_r6_note': '裝修後清潔',
+                    'pt_r7_service': '入伙清潔',
+                    'pt_r7_size': '300–500 呎',
+                    'pt_r7_note': '裝修後清潔',
+                    'pt_r8_service': '入伙清潔',
+                    'pt_r8_size': '500–800 呎',
+                    'pt_r8_note': '裝修後清潔',
+                    'pt_r9_service': '入伙清潔',
+                    'pt_r9_size': '800 呎以上',
+                    'pt_r9_note': '按實際情況報價',
+                    'pt_r10_service': '冷氣 + 清潔組合',
+                    'pt_r10_size': '不限',
+                    'pt_r10_note': '同時預約冷氣清洗及清潔服務',
+                    'cleaning_table_note': '以上價錢僅供參考，實際收費按現場環境、清潔難度及所需時間調整，歡迎 WhatsApp 查詢報價。',
                     'yl_badge': '天然抗菌 · 與別不同',
                     'yl_title': '立夏工程 獨家採用',
                     'yl_desc': 'Young Living Thieves® 家居清潔液 — 天然潔淨力量',
@@ -3833,8 +4450,8 @@
                     'booking_sub': '線上預約',
                     'booking_title': '即時預約',
                     'booking_desc': '填寫以下表格，我哋會盡快聯絡您確認',
-                    'booking_header': '立夏工程 · 冷氣清洗預約',
-                    'booking_header_small': '留低 姓名 · 電話 · 地址 · 清洗日期 · 專人回覆',
+                    'booking_header': '立夏工程 · 冷氣清洗及家居清潔預約',
+                    'booking_header_small': '留低 姓名 · 電話 · 地址 · 服務類型 · 專人回覆',
                     'booking_note_extra': '填寫後將自動打開 WhatsApp，請發送訊息給我們確認預約。',
                     'payment_sub': '方便快捷',
                     'payment_title': '付款方式',
@@ -3865,7 +4482,7 @@
                     'whatsapp_contact': '6754 5772 · 回覆時間 30 分鐘內',
                     'faq_sub': '常見問題',
                     'faq_title': '您可能想知',
-                    'faq_desc': '解答您對冷氣清洗嘅疑慮',
+                    'faq_desc': '解答您對冷氣清洗及家居清潔嘅疑慮',
                     'faq_q1': '清洗一部冷氣需要幾耐時間？',
                     'faq_a1': '一般家用分體式冷氣清洗約需 45 分鐘至 1 小時。若冷氣機滴水嚴重或需要額外處理，時間可能會稍長。師傅會先評估再同您確認。',
                     'faq_q2': '清洗冷氣會唔會整濕間屋？',
@@ -3874,8 +4491,10 @@
                     'faq_a3': '清洗完成後 15 日內，如果出現同一個問題（例如同一位置滴水），我哋會免費上門跟進處理，確保您用得安心。',
                     'faq_q4': '窗口式冷氣可以清洗嗎？',
                     'faq_a4': '可以！我哋同樣提供窗口式冷氣清洗服務。由於結構不同，清洗方式會略有調整，歡迎查詢報價。',
-                    'faq_q5': '點樣預約最快？',
-                    'faq_a5': '最快方法係點擊上面「立即預約」按鈕填寫表格，或者直接 WhatsApp 6754 5772 聯絡我哋，一般 30 分鐘內會回覆。',
+                    'faq_q5': '鐘點清潔、家居清潔、入伙清潔有咩分別？',
+                    'faq_a5': '鐘點清潔按小時收費，適合日常家務支援；家居清潔為全屋深層清潔，按面積報價；入伙清潔針對新居入伙前嘅裝修後清潔，去除粉塵、油漆漬及膠漬。詳情歡迎 WhatsApp 查詢。',
+                    'faq_q6': '點樣預約最快？',
+                    'faq_a6': '最快方法係點擊上面「立即預約」按鈕填寫表格，或者直接 WhatsApp 6754 5772 聯絡我哋，一般 30 分鐘內會回覆。',
                     'contact_sub': '聯繫我們',
                     'contact_title': '聯絡立夏工程',
                     'contact_desc': '隨時為您服務，歡迎查詢或預約',
@@ -3894,15 +4513,16 @@
                     'social_xiaohongshu': '小紅書',
                     'social_douyin': '抖音',
                     'social_facebook': 'Facebook',
-                    'footer_tag': '香港冷氣慢洗專家',
+                    'footer_tag': '香港冷氣清洗及家居清潔專家',
                     'footer_slogan': '慢慢洗 · 細心洗',
                     'footer_heart': '用心服務每一位顧客',
-                    'footer_sub': '元天屯 · 十年信譽'
+                    'footer_sub': '元天屯 · 十年信譽 · 冷氣清洗 · 家居清潔'
                 },
                 'zh-cn': {
-                    'brand_tag': '慢洗空调专家',
+                    'brand_tag': '空调清洗 · 家居清洁专家',
                     'service_area': '元朗 · 天水围 · 屯门',
                     'nav_services': '服务',
+                    'nav_cleaning': '清洁服务',
                     'nav_steps': '洗机步骤',
                     'nav_pricing': '价格',
                     'nav_videos': '影片',
@@ -3911,11 +4531,11 @@
                     'nav_faq': '常见问题',
                     'nav_contact': '联络',
                     'hero_tag': '专业师傅 · 十年经验',
-                    'hero_title1': '立夏 空调清洗',
+                    'hero_title1': '立夏 空调清洗 · 家居清洁',
                     'hero_title2': '慢慢洗 · 细心洗',
                     'hero_slogan': '慢工出细货 只要您不赶时间',
                     'hero_trust': '洗后滴水保障',
-                    'hero_desc': '高压深层清洗 · 防霉杀菌处理\n用心对待每一部空调 还您清新凉爽好睡眠',
+                    'hero_desc': '空调高压深层清洗 · 钟点 · 家居 · 入伙清洁\n用心对待每一个细节 还您清新凉爽舒适的家',
                     'hero_btn1': '查询价格',
                     'hero_btn2': '立即预约',
                     'stat1': '空调清洗',
@@ -3933,6 +4553,65 @@
                     'f3_desc': '不赶工、不马虎，每一部空调都细心拆洗，确保每个部件洁净如新。',
                     'f4_title': '15天洗后保障',
                     'f4_desc': '信心之选，15天同一问题滴水保障，服务有质素。',
+                    'cleaning_sub': '家居清洁服务',
+                    'cleaning_title': '钟点 · 家居 · 入伙清洁',
+                    'cleaning_desc': '专业清洁团队，为您打造干净舒适的家',
+                    'cleaning_popular': '最受欢迎',
+                    'c1_title': '钟点清洁',
+                    'c1_desc': '弹性时间，按小时收费，适合日常打扫、深层清洁、煮饭、洗衣等家务支援。',
+                    'c1_price_note': '最少 2 小时 · 2 小时 $240 起',
+                    'c1_f1': '每小时 $120 起',
+                    'c1_f2': '最少 2 小时',
+                    'c1_f3': '自备清洁用品或代购',
+                    'c2_title': '家居清洁',
+                    'c2_desc': '全屋深层清洁，包括厨房、浴室、地板、窗户、家具除尘等，让家居焕然一新。',
+                    'c2_price_note': '300 呎以下 · 全屋深层清洁',
+                    'c2_f1': '按单位面积报价',
+                    'c2_f2': '厨房去油 · 浴室除霉',
+                    'c2_f3': '可加配空调清洗',
+                    'c3_title': '入伙清洁',
+                    'c3_desc': '新居入伙前彻底清洁，去除装修粉尘、油漆渍、胶渍，让您安心入住。',
+                    'c3_price_note': '300 呎以下 · 装修后清洁',
+                    'c3_f1': '装修后清洁',
+                    'c3_f2': '全屋除尘 · 去渍',
+                    'c3_f3': '可预约即日或指定日期',
+                    'cleaning_note': '清洁服务价钱按实际情况报价，欢迎 WhatsApp 查询。',
+                    'cleaning_table_title': '清洁服务价目表',
+                    'pt_service': '服务项目',
+                    'pt_size': '单位面积',
+                    'pt_price': '收费',
+                    'pt_note': '备注',
+                    'pt_r1_service': '钟点清洁',
+                    'pt_r1_size': '不限',
+                    'pt_r1_note': '最少 2 小时，2 小时 $240 起',
+                    'pt_r2_service': '家居清洁',
+                    'pt_r2_size': '300 呎以下',
+                    'pt_r2_note': '全屋深层清洁',
+                    'pt_r3_service': '家居清洁',
+                    'pt_r3_size': '300–500 呎',
+                    'pt_r3_note': '全屋深层清洁',
+                    'pt_r4_service': '家居清洁',
+                    'pt_r4_size': '500–800 呎',
+                    'pt_r4_note': '全屋深层清洁',
+                    'pt_r5_service': '家居清洁',
+                    'pt_r5_size': '800 呎以上',
+                    'pt_r5_note': '按实际情况报价',
+                    'pt_r6_service': '入伙清洁',
+                    'pt_r6_size': '300 呎以下',
+                    'pt_r6_note': '装修后清洁',
+                    'pt_r7_service': '入伙清洁',
+                    'pt_r7_size': '300–500 呎',
+                    'pt_r7_note': '装修后清洁',
+                    'pt_r8_service': '入伙清洁',
+                    'pt_r8_size': '500–800 呎',
+                    'pt_r8_note': '装修后清洁',
+                    'pt_r9_service': '入伙清洁',
+                    'pt_r9_size': '800 呎以上',
+                    'pt_r9_note': '按实际情况报价',
+                    'pt_r10_service': '空调 + 清洁组合',
+                    'pt_r10_size': '不限',
+                    'pt_r10_note': '同时预约空调清洗及清洁服务',
+                    'cleaning_table_note': '以上价钱仅供参考，实际收费按现场环境、清洁难度及所需时间调整，欢迎 WhatsApp 查询报价。',
                     'yl_badge': '天然抗菌 · 与众不同',
                     'yl_title': '立夏工程 独家采用',
                     'yl_desc': 'Young Living Thieves® 家居清洁液 — 天然洁净力量',
@@ -3985,8 +4664,8 @@
                     'booking_sub': '线上预约',
                     'booking_title': '即时预约',
                     'booking_desc': '填写以下表格，我们会尽快联络您确认',
-                    'booking_header': '立夏工程 · 空调清洗预约',
-                    'booking_header_small': '留下 姓名 · 电话 · 地址 · 清洗日期 · 专人回覆',
+                    'booking_header': '立夏工程 · 空调清洗及家居清洁预约',
+                    'booking_header_small': '留下 姓名 · 电话 · 地址 · 服务类型 · 专人回覆',
                     'booking_note_extra': '填写后将自动打开 WhatsApp，请发送讯息给我们确认预约。',
                     'payment_sub': '方便快捷',
                     'payment_title': '付款方式',
@@ -4017,7 +4696,7 @@
                     'whatsapp_contact': '6754 5772 · 回复时间 30 分钟内',
                     'faq_sub': '常见问题',
                     'faq_title': '您可能想知道',
-                    'faq_desc': '解答您对空调清洗的疑虑',
+                    'faq_desc': '解答您对空调清洗及家居清洁的疑虑',
                     'faq_q1': '清洗一部空调需要多长时间？',
                     'faq_a1': '一般家用分体式空调清洗约需 45 分钟至 1 小时。若空调滴水严重或需要额外处理，时间可能会稍长。师傅会先评估再跟您确认。',
                     'faq_q2': '清洗空调会不会弄湿屋子？',
@@ -4026,8 +4705,10 @@
                     'faq_a3': '清洗完成后 15 天内，如果出现同一个问题（例如同一位置滴水），我们会免费上门跟进处理，确保您用得安心。',
                     'faq_q4': '窗式空调可以清洗吗？',
                     'faq_a4': '可以！我们同样提供窗式空调清洗服务。由于结构不同，清洗方式会略有调整，欢迎查询报价。',
-                    'faq_q5': '怎么预约最快？',
-                    'faq_a5': '最快方法是点击上面「立即预约」按钮填写表格，或者直接 WhatsApp 6754 5772 联系我们，一般 30 分钟内会回复。',
+                    'faq_q5': '钟点清洁、家居清洁、入伙清洁有什么区别？',
+                    'faq_a5': '钟点清洁按小时收费，适合日常家务支援；家居清洁为全屋深层清洁，按面积报价；入伙清洁针对新居入伙前的装修后清洁，去除粉尘、油漆渍及胶渍。详情欢迎 WhatsApp 查询。',
+                    'faq_q6': '怎么预约最快？',
+                    'faq_a6': '最快方法是点击上面「立即预约」按钮填写表格，或者直接 WhatsApp 6754 5772 联系我们，一般 30 分钟内会回复。',
                     'contact_sub': '联系我们',
                     'contact_title': '联络立夏工程',
                     'contact_desc': '随时为您服务，欢迎查询或预约',
@@ -4046,15 +4727,16 @@
                     'social_xiaohongshu': '小红书',
                     'social_douyin': '抖音',
                     'social_facebook': 'Facebook',
-                    'footer_tag': '香港空调慢洗专家',
+                    'footer_tag': '香港空调清洗及家居清洁专家',
                     'footer_slogan': '慢慢洗 · 细心洗',
                     'footer_heart': '用心服务每一位顾客',
-                    'footer_sub': '元天屯 · 十年信誉'
+                    'footer_sub': '元天屯 · 十年信誉 · 空调清洗 · 家居清洁'
                 },
                 'en': {
-                    'brand_tag': 'Slow & Careful AC Expert',
+                    'brand_tag': 'AC Cleaning · Home Cleaning Expert',
                     'service_area': 'Yuen Long · Tin Shui Wai · Tuen Mun',
                     'nav_services': 'Services',
+                    'nav_cleaning': 'Cleaning Services',
                     'nav_steps': 'Steps',
                     'nav_pricing': 'Pricing',
                     'nav_videos': 'Videos',
@@ -4063,11 +4745,11 @@
                     'nav_faq': 'FAQ',
                     'nav_contact': 'Contact',
                     'hero_tag': 'Professional · 10 Years Experience',
-                    'hero_title1': 'AirconSummer AC Cleaning',
+                    'hero_title1': 'AirconSummer AC & Home Cleaning',
                     'hero_title2': 'Slow & Careful',
                     'hero_slogan': 'Quality over speed – take your time',
                     'hero_trust': '15-Day Drip Guarantee',
-                    'hero_desc': 'High-pressure deep cleaning · Anti-mold treatment\nWe treat every AC with care for fresh, cool air',
+                    'hero_desc': 'High-pressure AC cleaning · Hourly · Home · Move-in cleaning\nWe care for every detail for a fresh, comfortable home',
                     'hero_btn1': 'Check Pricing',
                     'hero_btn2': 'Book Now',
                     'stat1': 'AC Cleaned',
@@ -4085,6 +4767,65 @@
                     'f3_desc': 'No rushing, no shortcuts – every AC is carefully disassembled and cleaned to perfection.',
                     'f4_title': '15-Day Guarantee',
                     'f4_desc': 'Confidence guaranteed – 15-day protection for the same issue, ensuring quality service.',
+                    'cleaning_sub': 'Home Cleaning Services',
+                    'cleaning_title': 'Hourly · Home · Move-in Cleaning',
+                    'cleaning_desc': 'Professional cleaning team for a clean and comfortable home',
+                    'cleaning_popular': 'Most Popular',
+                    'c1_title': 'Hourly Cleaning',
+                    'c1_desc': 'Flexible hours, charged by the hour. Ideal for daily cleaning, deep cleaning, cooking, laundry and more.',
+                    'c1_price_note': 'Min. 2 hours · From $240 for 2 hours',
+                    'c1_f1': 'From $120/hour',
+                    'c1_f2': 'Minimum 2 hours',
+                    'c1_f3': 'Bring your own supplies or we can purchase',
+                    'c2_title': 'Home Cleaning',
+                    'c2_desc': 'Whole-home deep cleaning including kitchen, bathroom, floors, windows, furniture dusting and more.',
+                    'c2_price_note': 'Under 300 sq ft · Whole-home deep clean',
+                    'c2_f1': 'Quote by unit size',
+                    'c2_f2': 'Kitchen degreasing · Bathroom mold removal',
+                    'c2_f3': 'Can add AC cleaning',
+                    'c3_title': 'Move-in Cleaning',
+                    'c3_desc': 'Thorough cleaning before moving in – removes renovation dust, paint stains and glue residue.',
+                    'c3_price_note': 'Under 300 sq ft · Post-renovation clean',
+                    'c3_f1': 'Post-renovation cleaning',
+                    'c3_f2': 'Whole-home dusting · Stain removal',
+                    'c3_f3': 'Same-day or scheduled booking available',
+                    'cleaning_note': 'Cleaning prices quoted based on actual condition. WhatsApp us for details.',
+                    'cleaning_table_title': 'Cleaning Service Price List',
+                    'pt_service': 'Service',
+                    'pt_size': 'Unit Size',
+                    'pt_price': 'Price',
+                    'pt_note': 'Remarks',
+                    'pt_r1_service': 'Hourly Cleaning',
+                    'pt_r1_size': 'Any',
+                    'pt_r1_note': 'Min. 2 hours, from $240 for 2 hours',
+                    'pt_r2_service': 'Home Cleaning',
+                    'pt_r2_size': 'Under 300 sq ft',
+                    'pt_r2_note': 'Whole-home deep clean',
+                    'pt_r3_service': 'Home Cleaning',
+                    'pt_r3_size': '300–500 sq ft',
+                    'pt_r3_note': 'Whole-home deep clean',
+                    'pt_r4_service': 'Home Cleaning',
+                    'pt_r4_size': '500–800 sq ft',
+                    'pt_r4_note': 'Whole-home deep clean',
+                    'pt_r5_service': 'Home Cleaning',
+                    'pt_r5_size': 'Over 800 sq ft',
+                    'pt_r5_note': 'Quote based on actual condition',
+                    'pt_r6_service': 'Move-in Cleaning',
+                    'pt_r6_size': 'Under 300 sq ft',
+                    'pt_r6_note': 'Post-renovation clean',
+                    'pt_r7_service': 'Move-in Cleaning',
+                    'pt_r7_size': '300–500 sq ft',
+                    'pt_r7_note': 'Post-renovation clean',
+                    'pt_r8_service': 'Move-in Cleaning',
+                    'pt_r8_size': '500–800 sq ft',
+                    'pt_r8_note': 'Post-renovation clean',
+                    'pt_r9_service': 'Move-in Cleaning',
+                    'pt_r9_size': 'Over 800 sq ft',
+                    'pt_r9_note': 'Quote based on actual condition',
+                    'pt_r10_service': 'AC + Cleaning Combo',
+                    'pt_r10_size': 'Any',
+                    'pt_r10_note': 'Book AC cleaning and cleaning service together',
+                    'cleaning_table_note': 'Prices are for reference only. Final quote depends on on-site condition, difficulty and time required. WhatsApp us for a quote.',
                     'yl_badge': 'Natural Antibacterial · Stand Out',
                     'yl_title': 'AirconSummer Exclusive',
                     'yl_desc': 'Young Living Thieves® Household Cleaner — Natural Cleaning Power',
@@ -4137,8 +4878,8 @@
                     'booking_sub': 'Online Booking',
                     'booking_title': 'Book Now',
                     'booking_desc': 'Fill out the form and we\'ll confirm shortly',
-                    'booking_header': 'AirconSummer Engineering · AC Cleaning Booking',
-                    'booking_header_small': 'Name · Phone · Address · Date · We\'ll reply',
+                    'booking_header': 'AirconSummer Engineering · AC & Home Cleaning Booking',
+                    'booking_header_small': 'Name · Phone · Address · Service Type · We\'ll reply',
                     'booking_note_extra': 'After submitting, WhatsApp will open. Please send the message to confirm.',
                     'payment_sub': 'Quick & Easy',
                     'payment_title': 'Payment Methods',
@@ -4169,7 +4910,7 @@
                     'whatsapp_contact': '6754 5772 · Reply within 30 mins',
                     'faq_sub': 'FAQ',
                     'faq_title': 'You May Want to Know',
-                    'faq_desc': 'Answers to your AC cleaning questions',
+                    'faq_desc': 'Answers to your AC cleaning and home cleaning questions',
                     'faq_q1': 'How long does it take to clean one AC unit?',
                     'faq_a1': 'A standard split AC cleaning takes about 45 minutes to 1 hour. If the unit has severe dripping issues, it may take a bit longer. Our technician will assess and confirm with you.',
                     'faq_q2': 'Will cleaning the AC make my place wet?',
@@ -4178,8 +4919,10 @@
                     'faq_a3': 'If the same issue (e.g., dripping from the same spot) occurs within 15 days after cleaning, we will return to fix it free of charge – so you can have total peace of mind.',
                     'faq_q4': 'Can you clean window-type AC units?',
                     'faq_a4': 'Yes! We also offer window-type AC cleaning services. The process is slightly different due to the structure, so feel free to contact us for a quote.',
-                    'faq_q5': 'What\'s the fastest way to book?',
-                    'faq_a5': 'The quickest way is to fill out the "Book Now" form above, or directly WhatsApp us at 6754 5772. We usually reply within 30 minutes.',
+                    'faq_q5': 'What is the difference between hourly, home, and move-in cleaning?',
+                    'faq_a5': 'Hourly cleaning is charged by the hour for daily household support; home cleaning is a whole-home deep clean quoted by size; move-in cleaning targets post-renovation cleaning before moving in, removing dust, paint stains and glue residue. WhatsApp us for details.',
+                    'faq_q6': 'What\'s the fastest way to book?',
+                    'faq_a6': 'The quickest way is to fill out the "Book Now" form above, or directly WhatsApp us at 6754 5772. We usually reply within 30 minutes.',
                     'contact_sub': 'Contact Us',
                     'contact_title': 'Reach AirconSummer Engineering',
                     'contact_desc': 'Always here to help – inquiries and bookings welcome',
@@ -4198,10 +4941,10 @@
                     'social_xiaohongshu': 'Xiaohongshu',
                     'social_douyin': 'Douyin',
                     'social_facebook': 'Facebook',
-                    'footer_tag': 'Hong Kong AC Cleaning Expert',
+                    'footer_tag': 'HK AC & Home Cleaning Expert',
                     'footer_slogan': 'Slow & Careful',
                     'footer_heart': 'Serving every customer with heart',
-                    'footer_sub': 'Yuen Tin Tuen · 10 Years Trust'
+                    'footer_sub': 'Yuen Tin Tuen · 10 Years Trust · AC & Home Cleaning'
                 }
             };
 
@@ -4232,7 +4975,18 @@
 
             applyLanguage('zh-hk');
 
-            console.log('❄️ 立夏工程｜WhatsApp 預約版完成 ✅ 電話：67545772');
+            // ---- 14. 點擊清潔服務卡片自動選擇服務類型 ----
+            window.selectService = function(serviceName) {
+                const radios = document.querySelectorAll('input[name="serviceType"]');
+                radios.forEach(function(radio) {
+                    if (radio.value === serviceName) {
+                        radio.checked = true;
+                        radio.dispatchEvent(new Event('change'));
+                    }
+                });
+            };
+
+            console.log('❄️ 立夏工程｜冷氣清洗 + 家居清潔（含價目表）WhatsApp 預約版完成 ✅ 電話：67545772');
 
         })();
     </script>
