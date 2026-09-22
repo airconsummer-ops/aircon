@@ -5764,8 +5764,8 @@
                         note = `家居清潔 · ${size} 呎`;
                     } else if (serviceType === '入伙清潔') {
                         const size = document.getElementById('waCleaningSize')?.value || '300以下';
-                        const map = { '300以下': 1800, '300-500': 368000, '500-800': 468000, '800-1200': 5680, '1200以上': 8880 };
-                        price = map[size] || 2600;
+                        const map = { '300以下': 2680, '300-500': 3680, '500-800': 4680, '800-1200': 5680, '1200以上': 8880 };
+                        price = map[size] || 2680;
                         note = `入伙清潔 · ${size} 呎`;
                     }
                     if (price > 0) {
